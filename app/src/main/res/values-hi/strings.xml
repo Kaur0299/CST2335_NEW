@@ -3,4 +3,8 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">Namaste!</string>
     <string name="ButtonText">Mai Button hu!</string>
+    <string name="Login">Andar Aye!</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="Switch">Switch</string>
 </resources>

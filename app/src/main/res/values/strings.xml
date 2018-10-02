@@ -2,4 +2,8 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\'m a Button</string>
+    <string name="Login">login</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="Switch">What Does it do?</string>
 </resources>
