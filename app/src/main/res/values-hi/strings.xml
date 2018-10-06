@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab1</string>
-    <string name="hello_message">Namaste!</string>
-    <string name="ButtonText">Mai Button hu!</string>
-    <string name="Login">Andar Aye!</string>
-    <string name="radiobutton">RadioButton</string>
-    <string name="checkbox">CheckBox</string>
-    <string name="Switch">Switch</string>
+    <string name="app_name">Lab3</string>
+    <string name="hello_message">नमस्ते</string>
+    <string name="ButtonText">मैं एक बटन हूँ</string>
+    <string name="Login">लॉग इन करें</string>
+    <string name="radiobutton">dhakhan</string>
+    <string name="checkbox">Tikka Maar</string>
+    <string name="Switch">यह क्या करता है?</string>
+    <string name="dialog_message" >आप गतिविधि को समाप्त करना चाहते हैं?</string>
+    <string name="dialog_title">चेतावनी</string>
+    <string name="ok">ठीक</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="Switch_ON">स्विच चालू हो</string>
+    <string name="Switch_OFF">स्विच बंद हो</string>
 </resources>
