@@ -11,83 +11,79 @@ import android.widget.Toast;
 
 public class StartActivity extends Activity {
 
-    protected static final String ACTIVITY_NAME= "StartActivity";
+    protected static final String ACTIVITY_NAME = "StartActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        Button Button = (Button)findViewById(R.id.button);
+        Button Button = (Button) findViewById(R.id.button);
+        Button chatbutton = (Button) findViewById(R.id.button2); //send Button
         Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(StartActivity.this,ListItemsActivity.class);
-                startActivityForResult(intent,50);
+                Intent intent = new Intent(StartActivity.this, ListItemsActivity.class);
+                startActivityForResult(intent, 50);
+            }
+        });
+
+       chatbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User CLicked Start Chat");
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivityForResult(intent, 55);
             }
         });
 
 
-
     }
 
-    protected void onActivityResult(int requestCode,int resultCode,Intent data){
-       Context context = getApplicationContext();
-      if((requestCode==50) &&(resultCode==Activity.RESULT_OK)){
-            Log.i(ACTIVITY_NAME,"Returned to the StartActivity.onActivityResult");
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Context context = getApplicationContext();
+        if ((requestCode == 50) && (resultCode == Activity.RESULT_OK)) {
+            Log.i(ACTIVITY_NAME, "Returned to the StartActivity.onActivityResult");
             String messagePassed = data.getStringExtra("response");
             int duration = Toast.LENGTH_SHORT;
             Toast toast = Toast.makeText(this, messagePassed, duration);
             toast.show();
 
 
-
-
-
         }
     }
 
 
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
-        Log.i(ACTIVITY_NAME,"In onResume()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
 
-        }
+    }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
-        Log.i(ACTIVITY_NAME,"In onStart()");
+        Log.i(ACTIVITY_NAME, "In onStart()");
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-        Log.i(ACTIVITY_NAME,"In onPause()");
+        Log.i(ACTIVITY_NAME, "In onPause()");
     }
 
     @Override
-    protected void  onStop(){
+    protected void onStop() {
         super.onStop();
-        Log.i(ACTIVITY_NAME,"In onStop()");
+        Log.i(ACTIVITY_NAME, "In onStop()");
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
 
         super.onDestroy();
-        Log.i(ACTIVITY_NAME,"In onDestroy)");
+        Log.i(ACTIVITY_NAME, "In onDestroy)");
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 }
